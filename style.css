@@ -1,8 +1,55 @@
 :root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario:   #C0C0C0;
-    --botao-azul:  #167BF7;
-    --cor-de-fundo: #00030C;
+    --branco-principal: #160314;
+    --cinza-segundario: #32073a; 
+    --botao-azul: #26042e;
+    --cor-de-fundo: #c488db;
     --fonte-principal: 'Inter';
-    --botao-azul-efeito: #3C92FA;
+    --botao-azul-efeito: #eeeaf3; 
+}
+body{
+    background-color: var (--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight:400;
+ }
+
+*{margin:0;
+    padding: 0;
+ }
+ 
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-reapet;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+ .container {
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 50% 50%;
+
+ }
+ 
+ .container_botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+ }
+ 
+ .container_secundario{ 
+    background-attachment: transparent;
+    border: 2px solid var(--branco-principal);
+ }
+
+.container_imagem{
+    margin: 0 6em;
+}
+.secundario_imagem{
+    width: 80%;
 }
